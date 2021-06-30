@@ -1,4 +1,5 @@
 import {Menu} from '@headlessui/react'
+import Link from 'next/link'
 
 const BlogPage = () => {
     return (<header>
@@ -10,10 +11,10 @@ const BlogPage = () => {
             </Menu.Button>
             <Menu.Items as="ul">
             <Menu.Item as="li">
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                 </Menu.Item>
                 <Menu.Item as="li">
-                    <a href="/blog">Blog</a>
+                    <Link href="/blog">Blog</Link>
                 </Menu.Item>
             </Menu.Items>
         </Menu>
